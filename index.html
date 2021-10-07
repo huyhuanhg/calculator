@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./css/calculator.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="calculator">
+        <div class="logo">
+            <h1>CASIO<sup>&copy;</sup></h1>
+        </div>
+        <div class="screen off">
+            <div class="expression">
+
+            </div>
+            <div id="equal-box">
+
+            </div>
+            <div id="msg">
+                Hello!
+            </div>
+            <div class="error-icon">E</div>
+        </div>
+        <div class="key-group">
+            <div class="row">
+                <div class="col-1-5">
+                    <button class="number">7</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="number">8</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="number">9</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="delete" id="backspace">DEL</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="delete" id="reset">AC</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-5">
+                    <button class="number">4</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="number">5</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="number">6</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="operator">x</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="operator">&divide;</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-5">
+                    <button class="number">1</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="number">2</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="number">3</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="operator">+</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="operator">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-5">
+                    <button class="number">0</button>
+                </div>
+                <div class="col-1-5">
+                    <button id="decimal-point">.</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="parentheses" id="open-parentheses">(</button>
+                </div>
+                <div class="col-1-5">
+                    <button class="parentheses" id="closing-parentheses">)</button>
+                </div>
+                <div class="col-1-5">
+                    <button id="equal-btn">=</button>
+                </div>
+            </div>
+            <div id="power">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button id="on" onclick="onClick()" class="toggle-btn"><span>ON</span></button>
+                    <button id="off" onclick="offClick()" class="toggle-btn"><span>OFF</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/calculator.js"></script>
+</body>
+</html>
